@@ -18,6 +18,12 @@
 - Upgrade `commons-validator` library to version 1.6
 - Upgrade `okhttp3` library to version 3.14.0
 - Fix issue #177: Links from recent TLDs are considered invalid
+- Minimum delay between request now considers the time when the dowload is
+  actually finihsed, not the time when the URL was initially scheduled to be
+  downloaded (which disregards other processing times between scheduling and actual download)
+- Refactoring of FethcedResultHandler to simply notify the LinkStorage that
+  the download finished and to delegate data processing to other handlers
+  for the appropriate link type
 
 ## Version 0.11.0
 
