@@ -23,13 +23,14 @@
 - Upgrade gradle-node-plugin to version 1.3.1
 - Upgrade npm version to 6.10.2
 - Upgrade ache-dashboard npm dependencies
+- Upgrade gradle wrapper to version 5.6.1
+- Update Dockerfile to use openjdk:11-jdk (Java 11)
 - Minimum delay between request now considers the time when the dowload is
   actually finihsed, not the time when the URL was initially scheduled to be
   downloaded (which disregards other processing times between scheduling and actual download)
 - Refactoring of FethcedResultHandler to simply notify the LinkStorage that
   the download finished and to delegate data processing to other handlers
   for the appropriate link type
-
 
 ## Version 0.11.0
 
